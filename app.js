@@ -5,6 +5,7 @@ const express        = require("express"),
       mongoose       = require("mongoose");
       
 mongoose.connect("mongodb://localhost:27017/geek-jokes", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://corritaylor:<PASSWORD>@cluster0-akfvk.mongodb.net/test?retryWrites=true", { useNewUrlParser: true });
 
 mongoose.set('useFindAndModify', false);
 
