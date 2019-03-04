@@ -1,0 +1,20 @@
+{
+  "name": "geek-quotes",
+  "version": "1.0.0",
+  "description": "This is an app that gives random geeky jokes. We can't be serious all the time, right?!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Corri Taylor",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^3.2.6",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.17",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}

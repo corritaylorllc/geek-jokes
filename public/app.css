@@ -1,0 +1,122 @@
+body {
+  margin-bottom: 40px;
+  height: 100%;
+  font-family: 'Days One', sans-serif;
+  background-color: #000;
+}
+
+.container{
+    text-align: center;
+    width: 60%;
+    color: white;
+    border-radius: 25px;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h3, h5 {
+    font-size: 2vw;
+}
+
+hr {
+    width: 50%;
+    background-color: white;
+}
+
+/*#jokes {*/
+/*    margin-top: 40px;*/
+/*    font-family: 'Raleway', sans-serif;*/
+/*    font-size: 3vw;*/
+/*}*/
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  margin-top: 40vh;
+  background-color: grey;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 25px;
+}
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://i.imgur.com/3Z0LVgo.jpg) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://i.imgur.com/STqTrkB.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://i.imgur.com/mOOBztV.jpg);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://i.imgur.com/SeAoNdN.jpg);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://i.imgur.com/yXHzEaT.jpg);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+    opacity: 1;
+}
+
+#footer {
+    text-align: center;
+    font-size: 0.5rem;
+    color: black;
+    margin-bottom: 0;
+}
+
+button:focus {
+    outline: 0;
+    box-shadow: none;
+}
