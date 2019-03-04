@@ -1,5 +1,3 @@
-App is deployed [here](https://geek-jokes-cmt.herokuapp.com/).
-
 # Free 2 B Geek
 ## This is an app that gives random geeky jokes. We can't be serious all the time, right?!
 
