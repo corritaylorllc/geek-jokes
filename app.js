@@ -4,8 +4,9 @@ const express        = require("express"),
       bodyParser     = require("body-parser"),
       mongoose       = require("mongoose");
       
-mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });
-
+var url = process.env.DATABASEURL || "mongodb://localhost:27017/geek-jokes";
+mongoose.connect(url);
+      
 mongoose.set('useFindAndModify', false);
 
 app.set("view engine", "ejs");
