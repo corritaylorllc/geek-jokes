@@ -5,7 +5,6 @@ const express        = require("express"),
       mongoose       = require("mongoose");
       
 mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });
-// mongoose.connect("mongodb+srv://corritaylor:<PASSWORD>@cluster0-akfvk.mongodb.net/test?retryWrites=true", { useNewUrlParser: true });
 
 mongoose.set('useFindAndModify', false);
 
